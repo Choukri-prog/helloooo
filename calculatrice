@@ -1,0 +1,41 @@
+def addition(a , b):
+    return a + b
+def soustraction(a , b):
+    return a - b
+def multiplication(a , b):
+    return a * b
+def division(a , b):
+        return a / b
+def calculatrice():
+    while True :
+      print("1) addition")        
+      print("2) soustraction") 
+      print("3) multiplication") 
+      print("4) division") 
+      print("5) quitter") 
+      choix = input("choisit une operation : ")
+      if choix == "5" :
+          print("calculatrice eteinte.")
+          break
+      if choix == "1" :
+          a = float(input("entrez le premier nombre/chiffre :"))
+          b = float(input("entrez le second nombre/chiffre :"))
+          print("le resultat est : ", addition(a , b))
+      if choix == "2" :
+          a = float(input("entrez le premier nombre/chiffre :"))
+          b = float(input("entrez le second nombre/chiffre :"))
+          print("le resultat est : ", soustraction(a , b))    
+      if choix == "3" :
+          a = float(input("entrez le premier nombre/chiffre :"))
+          b = float(input("entrez le second nombre/chiffre :"))
+          print("le resultat est : ", multiplication(a , b))
+      if choix == "4" :
+          a = float(input("entrez le premier nombre/chiffre :"))
+          b = float(input("entrez le second nombre/chiffre :"))
+          if b != 0 :
+              print("le resultat est : ", division(a , b)) 
+          else :
+              print("division par 0 ? je vous prie de suivre en cours.")    
+      if choix != "1" and choix != "2" and choix != "3" and choix != "4" and choix != "5" :
+          print("choix invalide !")    
+calculatrice() 
